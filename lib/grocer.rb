@@ -1,18 +1,18 @@
 require 'pry'
-def find_item_by_name_in_collection(name, collection)
-  result = {}
-  collection.each do |item|
-    return item if
-      if name == i[k]
-        result = i
-      end
-    end
-  end
-  if result == {}
-    return nil
-  end
-  result
-end
+# def find_item_by_name_in_collection(name, collection)
+#   result = {}
+#   collection.each do |i|
+#     i.each do |k,v|
+#       if name == i[k]
+#         result = i
+#       end
+#     end
+#   end
+#   if result == {}
+#     return nil
+#   end
+#   result
+# end
 
 def find_item_by_name_in_collection(name, collection)
   index = 0
