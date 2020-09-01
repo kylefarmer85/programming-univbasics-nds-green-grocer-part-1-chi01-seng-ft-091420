@@ -37,20 +37,20 @@ end
 # end
     
     
-def consolidate_cart(cart)
-  new_cart = []
-  counter = 0
-  while counter < cart.length
-    new_cart_item = find_item_by_name_in_collection(cart[counter][:item], new_cart)
-    if new_cart_item
-      new_cart_item[:count] += 1
-    else
-      new_cart.push(cart[counter].merge({:count => 1}))
-    end
-    counter += 1
-  end
-  new_cart
-end
+# def consolidate_cart(cart)
+#   new_cart = []
+#   counter = 0
+#   while counter < cart.length
+#     new_cart_item = find_item_by_name_in_collection(cart[counter][:item], new_cart)
+#     if new_cart_item
+#       new_cart_item[:count] += 1
+#     else
+#       new_cart.push(cart[counter].merge({:count => 1}))
+#     end
+#     counter += 1
+#   end
+#   new_cart
+# end
 
 def consolidate_cart(cart)
   index = 0
