@@ -36,7 +36,7 @@ def consolidate_cart(cart)
     else
       new_cart.push(cart[counter].merge({:count => 1}))
     end
-  counter += 1
+    counter += 1
   end
   new_cart
 end
