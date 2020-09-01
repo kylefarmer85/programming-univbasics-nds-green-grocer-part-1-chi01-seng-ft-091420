@@ -2,7 +2,7 @@ require 'pry'
 def find_item_by_name_in_collection(name, collection)
   result = {}
   collection.each do |item|
-    i.each do |k,v|
+    return item if
       if name == i[k]
         result = i
       end
